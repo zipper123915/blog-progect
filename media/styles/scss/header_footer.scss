@@ -83,12 +83,14 @@
 			cursor: pointer;
 			width: 34px;
 			height: 34px;
-			transform: translate(0, -50%);
+			-webkit-transform: translate(0, -50%);
+			        transform: translate(0, -50%);
 			background: url(../../img/header_control-slider.png) no-repeat center;
 		}
 		.control-1{
 			left: 0;
-			transform: translate(0, -50%) rotate(-180deg);
+			-webkit-transform: translate(0, -50%) rotate(-180deg);
+			        transform: translate(0, -50%) rotate(-180deg);
 		}
 		.control-2{
 			right: 0;
@@ -147,19 +149,23 @@
 				   -moz-appearance: none;
 				        appearance: none;
 				line-height: 50px;
-				border: 1px solid #f2f2f2;
+				border: 2px solid #f2f2f2;
 				letter-spacing: 1.5px;
 				position: relative;
+				-webkit-transition: .4s;
 				transition: .4s;
 				outline: 0px solid #fff;
 				&:hover{
-					box-shadow: 0 0 5px 0 #fff,
+					-webkit-box-shadow: 0 0 5px 0 #fff,
+					inset 0 0 0 5px #fff;
+					        box-shadow: 0 0 5px 0 #fff,
 					inset 0 0 0 5px #fff;
 				}
 				&::after{
 					content: url(../../img/Arrow-down-for-btn.svg);
 					left: 50%;
-					transform: translate(-50%, 0);
+					-webkit-transform: translate(-50%, 0);
+					        transform: translate(-50%, 0);
 					position: absolute;
 					bottom: -130%;
 				}
@@ -167,5 +173,160 @@
 		}
 	}
 }	
-
+.footer{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	-webkit-column-gap: 30px;
+	        column-gap: 30px;
+	align-items:center;
+	padding: 0 calc(12.5% + 15px);
+	background-color:#292929;
+	input{
+		background-color: transparent;
+		padding: 22px;
+		color: #949494;
+		font-family: "Crimson Text";
+		font-size: 14px;
+		font-style: italic;
+		line-height: 20.31px;
+		letter-spacing: 1.4px;
+		border:none;
+		border: 2px solid #464646;
+		&#name{
+			grid-column: 5 / span 4;
+			grid-row: 2;
+		}
+		&[type="email"]{
+			grid-column: 9 / span 4;
+			grid-row: 2;
+		}
+		&[type="tel"]{
+			grid-column: 5 / span 4;
+			grid-row: 3;
+		}
+		&[type="text"]{
+			grid-column: 9 / span 4;
+			grid-row: 3;
+		}
+	}
+	textarea{
+		resize: none;
+		padding: 22px;
+		color: #949494;
+		font-family: "Crimson Text";
+		font-size: 14px;
+		font-style: italic;
+		line-height: 20.31px;
+		letter-spacing: 1.4px;
+		background-color: transparent;
+		border:none;
+		border: 2px solid #464646;
+		grid-column: 5 / span 8;
+		grid-row: 4;
+	}
+	button{
+		grid-column-start: 5;
+		grid-row: 5;
+		box-shadow:0;
+		outline: none;
+		grid-column-end: span 2;
+		border:none;
+		width: 135px;
+		height: 39px;
+		cursor: pointer;
+		background-color: #464646;
+		color: #e3e3e3;
+		font-family: Montserrat;
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 1.47px;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+		        appearance: none;
+	}
+	.info{
+		grid-area: 2 / 1 / span 4 /span 4;
+		color: #949494;
+		font-family: "Crimson Text";
+		font-size: 14px;
+		align-self: stretch;
+		font-weight: 400;
+		line-height: 20.32px;
+		letter-spacing: 1.4px;
+		h2{
+			color: #e3e3e3;
+			font-family: Montserrat;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1.47px;
+		}
+		.discription{
+			margin: 0 0 40px 0;
+		}
+		.adress{
+			margin: 0 0 36px 0;
+			h2{
+				margin: 0 0 28px 0;
+			}
+		}
+		.socialnetworks{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			@for $i from 1 to 3{
+				.item-#{$i}{
+					margin: 0 10px 0 0;
+				}
+			}
+			.item-1::before{
+				content: url(../../img/Facebook-title.png);
+			}
+			.item-2::before{
+				content: url(../../img/Tweter-title.png);
+			}
+			.item-3::before{
+				content: url(../../img/Behance-title.png);
+			}
+		}
+		.email{
+			color: #e3e3e3;
+			font-family: Montserrat;
+			font-size: 13px;
+			font-weight: 400;
+			word-wrap: break-word;
+			line-height: 18px;
+			margin: 0 0 38px 0;
+			text-transform: uppercase;
+			letter-spacing: 1.47px;
+		}
+	}
+	.title{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 18px;
+		grid-area: 1 / 1 / span 1/ span 12;
+		font-weight: 700;
+		height: 100px;
+		align-self: center;
+		line-height: 100px;
+		padding: 0 0 0 50px;
+		text-transform: uppercase;
+		letter-spacing: 1.8px;
+		background: url(../../img/Icon_Logo.png) no-repeat left center;
+	}
+	.foot{
+		grid-area: 6 / 1 / span 1 / span 12;
+		padding: 40px 0;
+		border-top: 2px solid #3e3e3e;
+		color: #949494;
+		font-family: "Crimson Text";
+		font-size: 14px;
+		margin: 60px 0 0 0;
+		font-style: italic;
+		line-height: 20.31px;
+		letter-spacing: 1.4px;
+	}
+}
 
