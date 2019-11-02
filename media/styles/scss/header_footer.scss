@@ -143,7 +143,6 @@
 				width: 50%;
 				margin: auto;
 				cursor: pointer;
-				text-shadow: none;
 				-webkit-appearance: none;
 				   -moz-appearance: none;
 				        appearance: none;
@@ -153,20 +152,9 @@
 				position: relative;
 				transition: .4s;
 				outline: 0px solid #fff;
-				&::before{
-					content: '';
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					transition:  .4s;
-					left: 0;
-					border: 0px solid #fff
-				}
 				&:hover{
-					box-shadow: 0 0 5px 0 #fff;
-				}
-				&:hover::before{
-					border-width: 5px;
+					box-shadow: 0 0 5px 0 #fff,
+					inset 0 0 0 5px #fff;
 				}
 				&::after{
 					content: url(../../img/Arrow-down-for-btn.svg);
