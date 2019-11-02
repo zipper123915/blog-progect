@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 function style () {
-    return gulp.src('./media/styles/sass/*.sass')
+    return gulp.src('./media/styles/scss/*.scss')
             .pipe(sass({outputStyle: 'compressed'}))
             .pipe(gulp.dest('./media/styles/css'))
             .pipe(browserSync.stream())
@@ -16,7 +16,7 @@ function watch () {
             baseDir: './'
         }
     })
-    gulp.watch('./media/styles/sass/**/*.sass', style); 
+    gulp.watch('./media/styles/scss/**/*.scss', style); 
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
