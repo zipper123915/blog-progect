@@ -1,4 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap';
+@font-face{
+	font-family: Amsdam;
+	src: url(../../fonts/AmsdamFF/AmsdamRegular.ttf);
+	font-display: swap;	
+}
 .header{
 	color: #757575;
 	font-family: Montserrat;
@@ -126,6 +131,7 @@
 				font-family: "Crimson Text";
 				font-size: 14px;
 				font-weight: 400;
+				text-transform: none;
 				line-height: 50px;
 				letter-spacing: 1.4px;
 			}
@@ -145,8 +151,22 @@
 				border: 1px solid #f2f2f2;
 				letter-spacing: 1.5px;
 				position: relative;
-				.arrow-down{
-					fill: #fff;
+				transition: .4s;
+				outline: 0px solid #fff;
+				&::before{
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					transition:  .4s;
+					left: 0;
+					border: 0px solid #fff
+				}
+				&:hover{
+					box-shadow: 0 0 5px 0 #fff;
+				}
+				&:hover::before{
+					border-width: 5px;
 				}
 				&::after{
 					content: url(../../img/Arrow-down-for-btn.svg);
