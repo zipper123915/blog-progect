@@ -88,12 +88,12 @@
 			background: url(../../img/header_control-slider.png) no-repeat center;
 		}
 		.control-1{
-			left: 0;
+			left:calc(12.5% + 15px);
 			-webkit-transform: translate(0, -50%) rotate(-180deg);
 			        transform: translate(0, -50%) rotate(-180deg);
 		}
 		.control-2{
-			right: 0;
+			right: calc(12.5% + 15px);
 		}
 		.included{
 			margin: auto;
