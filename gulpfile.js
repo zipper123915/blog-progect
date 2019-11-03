@@ -6,18 +6,11 @@ function style () {
     return gulp.src('./media/styles/scss/*.scss')
             .pipe(sass({outputStyle: 'compressed'}))
             .pipe(gulp.dest('./media/styles/css'))
-            .pipe(browserSync.stream())
 }
 
 
 function watch () {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        }
-    })
     gulp.watch('./media/styles/scss/**/*.scss', style); 
-    gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 
