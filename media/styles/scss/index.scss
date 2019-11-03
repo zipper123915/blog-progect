@@ -1,2 +1,106 @@
 @import "header_footer.css";
-@import "./normalize.css"
+@import "./normalize.css";
+.section{
+    width: 75%;
+    margin: 0 auto;
+    font-family: "Crimson Text";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.4px;
+    .title{
+        font-family: Amsdam;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0 auto;
+        width: 20%;
+        text-align: center;
+        line-height: 20px;
+        padding: 0 0 27px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.44px;
+        background: url(../../img/title-under-line.png) repeat-x left bottom;
+    }
+    .buttons{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        margin: 45px 0 50px 0;
+        .btn{
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            border: none;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 0 35px;
+            cursor: pointer;
+            line-height: 0;
+            line-height: 44.32px;
+            letter-spacing: 1.47px;
+            &:not(:last-child){
+                margin-right: 4px;
+            }
+        }
+        .btn-white{
+            background: white;
+            border: 2px solid #3e3d3d;
+        }
+        .btn-black{
+            background: #3e3d3d;
+            color: #cecece;
+        }
+    }
+}
+.main{
+    margin-top: 73px;
+    background-color: #e3e3e3;
+}
+.about-us{
+    background-color: #fff;
+    .title{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        color: #3e3d3d;
+    }
+    .text{
+        color: #3e3d3d;
+        width: 88%;
+        margin: 0 auto;
+    }
+    .benefits{
+        display: flex;
+        padding: 40px 0 65px 0;
+        justify-content: center;
+        background: #e3e3e3;
+        color: #3e3d3d;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px;
+        &__item{
+            padding: 0 95px;
+            &:not(:last-child){
+                border-right: 1px solid #b0b0b0;
+            }
+            @for $i from 1 through 4{
+                &:nth-child(#{$i})::before{
+                    content: url(../../img/about-us_benefits_item-#{$i}-icon.svg);
+                    margin: 0 0 20px 0;
+                    display: block;
+                }
+            }
+        }
+        .figures{
+            color: #3e3d3d;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 83.99px;
+        }
+    }
+}
