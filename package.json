@@ -1,20 +1,25 @@
 {
-  "name": "layot",
+  "name": "www",
   "version": "1.0.0",
-  "description": "",
+  "description": "practize",
   "main": "gulpfile.js",
   "dependencies": {
-    "animate.css": "^3.7.2",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "normalize.css": "^8.0.1"
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.2"
   },
-  "devDependencies": {
-    "browser-sync": "^2.26.7"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zipper123915/blog-progect.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zipper123915/blog-progect/issues"
+  },
+  "homepage": "https://github.com/zipper123915/blog-progect#readme"
 }

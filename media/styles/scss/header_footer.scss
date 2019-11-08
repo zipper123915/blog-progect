@@ -16,10 +16,8 @@
 		margin: 0 auto;
 		width: 75%;
 		display:-webkit-box;
-		display:-ms-flexbox;
 		display:flex;
 		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
 		        justify-content: space-between;
 		padding: 0 15px;
 		.logo{
@@ -28,10 +26,8 @@
 		}
 		.nav{
 			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
 			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
 			        justify-content: space-between;
 			font-size: 0;
 			letter-spacing: 0;
@@ -48,14 +44,12 @@
 		}
 		.socialnetworks{
 			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
 			-webkit-box-align: center;
-			    -ms-flex-align: center;
 			        align-items: center;
 			&__item{
 				&:nth-child(1)::before{
-					content: url(../../img/Facebook-title.png);
+					content: url(....imgfacebook-title.png);
 					margin-right: 10px;
 				}
 				&:nth-child(2)::before{
@@ -70,7 +64,6 @@
 	}
 	.wellcome{
 		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		position: relative;
 		padding: 0 12.5%;
@@ -156,9 +149,7 @@
 				transition: .4s;
 				outline: 0px solid #fff;
 				&:hover{
-					-webkit-box-shadow: 0 0 5px 0 #fff,
-					inset 0 0 0 5px #fff;
-					        box-shadow: 0 0 5px 0 #fff,
+					box-shadow: 0 0 5px 0 #fff,
 					inset 0 0 0 5px #fff;
 				}
 				&::after{
@@ -174,13 +165,15 @@
 	}
 }	
 .footer{
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: (1fr)[12];
 	grid-template-columns: repeat(12, 1fr);
 	-webkit-column-gap: 30px;
-			column-gap: 30px;
+			-moz-column-gap: 30px;
+	     column-gap: 30px;
 	position: relative;
 	-webkit-box-align:center;
-	    -ms-flex-align:center;
 	        align-items:center;
 	padding: 0 calc(12.5% + 15px);
 	background:#292929;
@@ -196,19 +189,31 @@
 		border:none;
 		border: 2px solid #464646;
 		&#name{
+			-ms-grid-column: 5;
+			-ms-grid-column-span: 4;
 			grid-column: 5 / span 4;
+			-ms-grid-row: 2;
 			grid-row: 2;
 		}
 		&[type="email"]{
+			-ms-grid-column: 9;
+			-ms-grid-column-span: 4;
 			grid-column: 9 / span 4;
+			-ms-grid-row: 2;
 			grid-row: 2;
 		}
 		&[type="tel"]{
+			-ms-grid-column: 5;
+			-ms-grid-column-span: 4;
 			grid-column: 5 / span 4;
+			-ms-grid-row: 3;
 			grid-row: 3;
 		}
 		&[type="text"]{
+			-ms-grid-column: 9;
+			-ms-grid-column-span: 4;
 			grid-column: 9 / span 4;
+			-ms-grid-row: 3;
 			grid-row: 3;
 		}
 	}
@@ -224,15 +229,20 @@
 		background-color: transparent;
 		border:none;
 		border: 2px solid #464646;
+		-ms-grid-column: 5;
+		-ms-grid-column-span: 8;
 		grid-column: 5 / span 8;
+		-ms-grid-row: 4;
 		grid-row: 4;
 	}
 	button{
-		grid-column-start: 5;
+		-ms-grid-column: 5;
+		    grid-column-start: 5;
+		-ms-grid-row: 5;
 		grid-row: 5;
-		-webkit-box-shadow:0;
-		        box-shadow:0;
+		box-shadow:0;
 		outline: none;
+		-ms-grid-column-span: 2;
 		grid-column-end: span 2;
 		border:none;
 		width: 135px;
@@ -249,11 +259,16 @@
 		        appearance: none;
 	}
 	.info{
+		-ms-grid-row: 2;
+		-ms-grid-row-span: 4;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 4;
 		grid-area: 2 / 1 / span 4 /span 4;
 		color: #949494;
 		font-family: "Crimson Text";
 		font-size: 14px;
-		align-self: stretch;
+		-ms-grid-row-align: stretch;
+		    align-self: stretch;
 		font-weight: 400;
 		line-height: 20.32px;
 		letter-spacing: 1.4px;
@@ -277,7 +292,6 @@
 		}
 		.socialnetworks{
 			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
 			@for $i from 1 to 3{
 				.item-#{$i}{
@@ -310,10 +324,15 @@
 		color: #ffffff;
 		font-family: Montserrat;
 		font-size: 18px;
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 12;
 		grid-area: 1 / 1 / span 1/ span 12;
 		font-weight: 700;
 		height: 100px;
-		align-self: center;
+		-ms-grid-row-align: center;
+		    align-self: center;
 		line-height: 100px;
 		padding: 0 0 0 50px;
 		text-transform: uppercase;
@@ -321,6 +340,10 @@
 		background: url(../../img/Icon_Logo.png) no-repeat left center;
 	}
 	.foot{
+		-ms-grid-row: 6;
+		-ms-grid-row-span: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 12;
 		grid-area: 6 / 1 / span 1 / span 12;
 		padding: 40px 0;
 		border-top: 2px solid #3e3e3e;
