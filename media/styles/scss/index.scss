@@ -27,6 +27,9 @@
 
         background: url(../../img/title-under-line.png) repeat-x left bottom;
     }
+    p.text{
+        text-align: center;
+    }
     .buttons
     {
         display: -webkit-box;
@@ -296,6 +299,9 @@
         font-size: 13px; 
     }
     .time-line{
+        @media screen and(max-width: 900px){
+                margin-left: -12.5%;
+            }
         margin-top: 40px;
         color: #3e3d3d;
         .date-start{
@@ -303,13 +309,16 @@
             font-size: 13px;
             font-weight: 400;
             letter-spacing: 1.47px;
-            border: 1px solid #3e3d3d;
+            border: 2px solid #3e3d3d;
             width: 73px;
             height: 73px;
             text-align: center;
             margin: 0 auto;
             border-radius: 50%;
             line-height: 73px;
+            @media all and(max-width: 900px) {
+                margin: 0;
+            }
         }
         .date{
             font-family: Montserrat;
@@ -327,7 +336,19 @@
         }
         .page{
             padding: 45px 0 0 0;
+            margin-bottom: 45px;
+            &:nth-last-child(2){
+                margin-bottom: 30px;
+            }
             &__item{
+                &::after{
+                    content: '';
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background-color: #3e3d3d;
+                }
                 margin-bottom: 30px;
                 padding: 30px 0 30px 25px;
                 position: relative;
@@ -350,6 +371,10 @@
                     &::before{
                         right: -2px;
                     }
+                    &::after{
+                        top: 0;
+                        right: -35px;
+                    }
                     span:first-of-type{
                         width: 10px;
                         top: 10px;
@@ -364,13 +389,23 @@
                         background-color: #464646;
                         transform: rotate(-50deg);
                     }
+                    @media  all and(max-width: 900px) {
+                        display: none;
+                    }
                 }
                 &:nth-child(even){
                     grid-column: 7 / span 6;
-                    right: -10px;
+                    right: -9px;
                     top: 40px;
+                    @media  all and(max-width: 900px) {
+                        grid-column: 1 / span 12
+                    }
                     &::before{
                         left: -2px;
+                    }
+                    &::after{
+                        top: 0px;
+                        left: -35px;
                     }
                     span:first-of-type{
                         width: 10px;
@@ -386,24 +421,43 @@
                         background-color: #464646;
                         transform: rotate(50deg);
                     }
+                    .verticaline{
+                        position: absolute;
+                        width: 2px;
+                        top: -38%;
+                        left: -5.7%;
+                        height: 150%;
+                        background-color: #3e3d3d;
+                    }
                 }
             }
             .dark{
                 background-color: #3e3d3d;
                 color: #e4e4e4;
-                &::after{
+                grid-row-end: span 2;
+                &::before{
                     content: '';
                     position: absolute;
                     width: 0;
                     height: 0;
-                    border-bottom: 10px solid transparent;
-                    border-left: 10px solid transparent;
-                    border-top: 10px solid #3e3d3d;
-                    border-right: 10px solid #3e3d3d;
-                    left: -15px;
+                    border-bottom: 8px solid transparent;
+                    border-left: 6px solid transparent;
+                    border-top: 8px solid #3e3d3d;
+                    border-right: 6px solid #3e3d3d;
+                    left: -13px;
                     top: 10px;
                 }
             }
         }
+        .finish-time-line{
+            border-radius: 50%;
+            width: 54px;
+            margin: auto;
+            height: 54px;
+            background: #3e3d3d url(../../img/finish-time-line.png) center no-repeat;
+        }
     }
+}
+.team{
+    background: #fff url(../../img/team-bg.jpg) center / cover no-repeat fixed;
 }
