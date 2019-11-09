@@ -1,14 +1,8 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "description": "practize",
+  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
-    "gulp-sass": "^4.0.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zipper123915/blog-progect/issues"
   },
-  "homepage": "https://github.com/zipper123915/blog-progect#readme"
+  "homepage": "https://github.com/zipper123915/blog-progect#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
 }

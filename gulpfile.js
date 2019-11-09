@@ -3,13 +3,13 @@ const sass = require('gulp-sass');
 
 function style () {
     return gulp.src('./media/styles/scss/*.scss')
-            .pipe(sass({outputStyle: 'compressed'}))
+            .pipe(sass())
             .pipe(gulp.dest('./media/styles/css'))
 }
 
 
 function watch () {
-    gulp.watch('./media/styles/scss/**/*.scss', style); 
+    gulp.watch('./media/styles/scss/**/*.scss', style);
 }
 
 

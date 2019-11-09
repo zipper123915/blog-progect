@@ -1,1 +1,313 @@
-@import 'https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap';@font-face{font-family:Amsdam;src:url(../../fonts/AmsdamFF/AmsdamRegular.ttf);font-display:swap}.header{color:#757575;font-family:Montserrat;font-size:18px;font-weight:400;line-height:50px;text-transform:uppercase;letter-spacing:1.8px}.header>.title{margin:0 auto;width:75%;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;padding:0 15px}.header>.title .logo{padding:0 0 0 50px;background:url(../../img/Icon_Logo.png) no-repeat center left}.header>.title .nav{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;font-size:0;letter-spacing:0}.header>.title .nav__item{text-decoration:none;display:inline-block;color:#aaaaaa;font-size:12px;text-transform:uppercase}.header>.title .nav__item:not(:last-child){margin-right:15px}.header>.title .socialnetworks{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}.header>.title .socialnetworks__item:nth-child(1)::before{content:url(....imgfacebook-title.png);margin-right:10px}.header>.title .socialnetworks__item:nth-child(2)::before{content:url(../../img/Tweter-title.png);margin-right:10px}.header>.title .socialnetworks__item:nth-child(3)::before{content:url(../../img/Behance-title.png)}.header .wellcome{display:-webkit-box;display:flex;position:relative;padding:0 12.5%;background:url(../../img/welcome-img.jpg) no-repeat center fixed;background-size:cover;min-height:500px}.header .wellcome .control{position:absolute;top:50%;cursor:pointer;width:34px;height:34px;-webkit-transform:translate(0, -50%);transform:translate(0, -50%);background:url(../../img/header_control-slider.png) no-repeat center}.header .wellcome .control-1{left:calc(12.5% + 15px);-webkit-transform:translate(0, -50%) rotate(-180deg);transform:translate(0, -50%) rotate(-180deg)}.header .wellcome .control-2{right:calc(12.5% + 15px)}.header .wellcome .included{margin:auto;text-align:center}.header .wellcome .included .title{color:#ffffff;font-family:Amsdam;font-size:36px;position:relative;line-height:100px;margin-top:0;font-weight:400;white-space:nowrap;text-transform:uppercase;letter-spacing:0.89px}.header .wellcome .included .title::before{content:'';position:absolute;top:0px;height:6px;width:100%;display:block;background:url(../../img/Line.png) repeat-x}.header .wellcome .included .title::after{content:'';bottom:0px;height:6px;width:100%;position:absolute;display:block;background:url(../../img/Line.png) repeat-x}.header .wellcome .included .sub-title{color:#ffffff;font-family:"Crimson Text";font-size:14px;font-weight:400;text-transform:none;line-height:50px;letter-spacing:1.4px}.header .wellcome .included .btn{color:#ffffff;font-family:Montserrat;font-size:15px;font-weight:400;width:50%;margin:auto;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:50px;border:2px solid #f2f2f2;letter-spacing:1.5px;position:relative;-webkit-transition:.4s;transition:.4s;outline:0px solid #fff}.header .wellcome .included .btn:hover{box-shadow:0 0 5px 0 #fff, inset 0 0 0 5px #fff}.header .wellcome .included .btn::after{content:url(../../img/Arrow-down-for-btn.svg);left:50%;-webkit-transform:translate(-50%, 0);transform:translate(-50%, 0);position:absolute;bottom:-130%}.footer{display:-ms-grid;display:grid;-ms-grid-columns:1fr [12];grid-template-columns:repeat(12, 1fr);-webkit-column-gap:30px;-moz-column-gap:30px;column-gap:30px;position:relative;-webkit-box-align:center;align-items:center;padding:0 calc(12.5% + 15px);background:#292929}.footer input{background-color:transparent;padding:22px;color:#949494;font-family:"Crimson Text";font-size:14px;font-style:italic;line-height:20.31px;letter-spacing:1.4px;border:none;border:2px solid #464646}.footer input#name{-ms-grid-column:5;-ms-grid-column-span:4;grid-column:5 / span 4;-ms-grid-row:2;grid-row:2}.footer input[type="email"]{-ms-grid-column:9;-ms-grid-column-span:4;grid-column:9 / span 4;-ms-grid-row:2;grid-row:2}.footer input[type="tel"]{-ms-grid-column:5;-ms-grid-column-span:4;grid-column:5 / span 4;-ms-grid-row:3;grid-row:3}.footer input[type="text"]{-ms-grid-column:9;-ms-grid-column-span:4;grid-column:9 / span 4;-ms-grid-row:3;grid-row:3}.footer textarea{resize:none;padding:22px;color:#949494;font-family:"Crimson Text";font-size:14px;font-style:italic;line-height:20.31px;letter-spacing:1.4px;background-color:transparent;border:none;border:2px solid #464646;-ms-grid-column:5;-ms-grid-column-span:8;grid-column:5 / span 8;-ms-grid-row:4;grid-row:4}.footer button{-ms-grid-column:5;grid-column-start:5;-ms-grid-row:5;grid-row:5;box-shadow:0;outline:none;-ms-grid-column-span:2;grid-column-end:span 2;border:none;width:135px;height:39px;cursor:pointer;background-color:#464646;color:#e3e3e3;font-family:Montserrat;font-size:13px;font-weight:400;letter-spacing:1.47px;-webkit-appearance:none;-moz-appearance:none;appearance:none}.footer .info{-ms-grid-row:2;-ms-grid-row-span:4;-ms-grid-column:1;-ms-grid-column-span:4;grid-area:2 / 1 / span 4 /span 4;color:#949494;font-family:"Crimson Text";font-size:14px;-ms-grid-row-align:stretch;align-self:stretch;font-weight:400;line-height:20.32px;letter-spacing:1.4px}.footer .info h2{color:#e3e3e3;font-family:Montserrat;font-size:13px;font-weight:400;line-height:18px;text-transform:uppercase;letter-spacing:1.47px}.footer .info .discription{margin:0 0 40px 0}.footer .info .adress{margin:0 0 36px 0}.footer .info .adress h2{margin:0 0 28px 0}.footer .info .socialnetworks{display:-webkit-box;display:flex}.footer .info .socialnetworks .item-1{margin:0 10px 0 0}.footer .info .socialnetworks .item-2{margin:0 10px 0 0}.footer .info .socialnetworks .item-1::before{content:url(../../img/Facebook-title.png)}.footer .info .socialnetworks .item-2::before{content:url(../../img/Tweter-title.png)}.footer .info .socialnetworks .item-3::before{content:url(../../img/Behance-title.png)}.footer .info .email{color:#e3e3e3;font-family:Montserrat;font-size:13px;font-weight:400;word-wrap:break-word;line-height:18px;margin:0 0 38px 0;text-transform:uppercase;letter-spacing:1.47px}.footer .title{color:#ffffff;font-family:Montserrat;font-size:18px;-ms-grid-row:1;-ms-grid-row-span:1;-ms-grid-column:1;-ms-grid-column-span:12;grid-area:1 / 1 / span 1/ span 12;font-weight:700;height:100px;-ms-grid-row-align:center;align-self:center;line-height:100px;padding:0 0 0 50px;text-transform:uppercase;letter-spacing:1.8px;background:url(../../img/Icon_Logo.png) no-repeat left center}.footer .foot{-ms-grid-row:6;-ms-grid-row-span:1;-ms-grid-column:1;-ms-grid-column-span:12;grid-area:6 / 1 / span 1 / span 12;padding:40px 0;border-top:2px solid #3e3e3e;color:#949494;font-family:"Crimson Text";font-size:14px;margin:60px 0 0 0;font-style:italic;line-height:20.31px;letter-spacing:1.4px}
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap';
+@font-face {
+  font-family: Amsdam;
+  src: url(../../fonts/AmsdamFF/AmsdamRegular.ttf);
+  font-display: swap; }
+
+.header {
+  color: #757575;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px; }
+  .header > .title {
+    margin: 0 auto;
+    width: 75%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 15px; }
+    .header > .title .logo {
+      padding: 0 0 0 50px;
+      background: url(../../img/Icon_Logo.png) no-repeat center left; }
+    .header > .title .nav {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      font-size: 0;
+      letter-spacing: 0; }
+      .header > .title .nav__item {
+        text-decoration: none;
+        display: inline-block;
+        color: #aaaaaa;
+        font-size: 12px;
+        text-transform: uppercase; }
+        .header > .title .nav__item:not(:last-child) {
+          margin-right: 15px; }
+    .header > .title .socialnetworks {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center; }
+      .header > .title .socialnetworks__item:nth-child(1)::before {
+        content: url(....imgfacebook-title.png);
+        margin-right: 10px; }
+      .header > .title .socialnetworks__item:nth-child(2)::before {
+        content: url(../../img/Tweter-title.png);
+        margin-right: 10px; }
+      .header > .title .socialnetworks__item:nth-child(3)::before {
+        content: url(../../img/Behance-title.png); }
+  .header .wellcome {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    padding: 0 12.5%;
+    background: url(../../img/welcome-img.jpg) no-repeat center fixed;
+    background-size: cover;
+    min-height: 500px; }
+    .header .wellcome .control {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      background: url(../../img/header_control-slider.png) no-repeat center; }
+    .header .wellcome .control-1 {
+      left: calc(12.5% + 15px);
+      -webkit-transform: translate(0, -50%) rotate(-180deg);
+      transform: translate(0, -50%) rotate(-180deg); }
+    .header .wellcome .control-2 {
+      right: calc(12.5% + 15px); }
+    .header .wellcome .included {
+      margin: auto;
+      text-align: center; }
+      .header .wellcome .included .title {
+        color: #ffffff;
+        font-family: Amsdam;
+        font-size: 36px;
+        position: relative;
+        line-height: 100px;
+        margin-top: 0;
+        font-weight: 400;
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 0.89px; }
+        .header .wellcome .included .title::before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          height: 6px;
+          width: 100%;
+          display: block;
+          background: url(../../img/Line.png) repeat-x; }
+        .header .wellcome .included .title::after {
+          content: '';
+          bottom: 0px;
+          height: 6px;
+          width: 100%;
+          position: absolute;
+          display: block;
+          background: url(../../img/Line.png) repeat-x; }
+      .header .wellcome .included .sub-title {
+        color: #ffffff;
+        font-family: "Crimson Text";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 50px;
+        letter-spacing: 1.4px; }
+      .header .wellcome .included .btn {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        width: 50%;
+        margin: auto;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        line-height: 50px;
+        border: 2px solid #f2f2f2;
+        letter-spacing: 1.5px;
+        position: relative;
+        -webkit-transition: .4s;
+        transition: .4s;
+        outline: 0px solid #fff; }
+        .header .wellcome .included .btn:hover {
+          box-shadow: 0 0 5px 0 #fff, inset 0 0 0 5px #fff; }
+        .header .wellcome .included .btn::after {
+          content: url(../../img/Arrow-down-for-btn.svg);
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          position: absolute;
+          bottom: -130%; }
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [12];
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 calc(12.5% + 15px);
+  background: #292929; }
+  .footer input {
+    background-color: transparent;
+    padding: 22px;
+    color: #949494;
+    font-family: "Crimson Text";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20.31px;
+    letter-spacing: 1.4px;
+    border: none;
+    border: 2px solid #464646; }
+    .footer input#name {
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 4;
+      grid-column: 5 / span 4;
+      -ms-grid-row: 2;
+      grid-row: 2; }
+    .footer input[type="email"] {
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 4;
+      grid-column: 9 / span 4;
+      -ms-grid-row: 2;
+      grid-row: 2; }
+    .footer input[type="tel"] {
+      -ms-grid-column: 5;
+      -ms-grid-column-span: 4;
+      grid-column: 5 / span 4;
+      -ms-grid-row: 3;
+      grid-row: 3; }
+    .footer input[type="text"] {
+      -ms-grid-column: 9;
+      -ms-grid-column-span: 4;
+      grid-column: 9 / span 4;
+      -ms-grid-row: 3;
+      grid-row: 3; }
+  .footer textarea {
+    resize: none;
+    padding: 22px;
+    color: #949494;
+    font-family: "Crimson Text";
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20.31px;
+    letter-spacing: 1.4px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #464646;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5 / span 8;
+    -ms-grid-row: 4;
+    grid-row: 4; }
+  .footer button {
+    -ms-grid-column: 5;
+    grid-column-start: 5;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    box-shadow: 0;
+    outline: none;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    border: none;
+    width: 135px;
+    height: 39px;
+    cursor: pointer;
+    background-color: #464646;
+    color: #e3e3e3;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.47px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .footer .info {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 1 / span 4 /span 4;
+    color: #949494;
+    font-family: "Crimson Text";
+    font-size: 14px;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    font-weight: 400;
+    line-height: 20.32px;
+    letter-spacing: 1.4px; }
+    .footer .info h2 {
+      color: #e3e3e3;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.47px; }
+    .footer .info .discription {
+      margin: 0 0 40px 0; }
+    .footer .info .adress {
+      margin: 0 0 36px 0; }
+      .footer .info .adress h2 {
+        margin: 0 0 28px 0; }
+    .footer .info .socialnetworks {
+      display: -webkit-box;
+      display: flex; }
+      .footer .info .socialnetworks .item-1 {
+        margin: 0 10px 0 0; }
+      .footer .info .socialnetworks .item-2 {
+        margin: 0 10px 0 0; }
+      .footer .info .socialnetworks .item-1::before {
+        content: url(../../img/Facebook-title.png); }
+      .footer .info .socialnetworks .item-2::before {
+        content: url(../../img/Tweter-title.png); }
+      .footer .info .socialnetworks .item-3::before {
+        content: url(../../img/Behance-title.png); }
+    .footer .info .email {
+      color: #e3e3e3;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 400;
+      word-wrap: break-word;
+      line-height: 18px;
+      margin: 0 0 38px 0;
+      text-transform: uppercase;
+      letter-spacing: 1.47px; }
+  .footer .title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 1 / 1 / span 1/ span 12;
+    font-weight: 700;
+    height: 100px;
+    -ms-grid-row-align: center;
+    align-self: center;
+    line-height: 100px;
+    padding: 0 0 0 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    background: url(../../img/Icon_Logo.png) no-repeat left center; }
+  .footer .foot {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 6 / 1 / span 1 / span 12;
+    padding: 40px 0;
+    border-top: 2px solid #3e3e3e;
+    color: #949494;
+    font-family: "Crimson Text";
+    font-size: 14px;
+    margin: 60px 0 0 0;
+    font-style: italic;
+    line-height: 20.31px;
+    letter-spacing: 1.4px; }
