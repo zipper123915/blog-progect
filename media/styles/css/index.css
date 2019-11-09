@@ -376,7 +376,7 @@
         width: 90%;
         height: 90%;
         padding: 40px 20px;
-        transition: .4s;
+        transition: .4s .5s;
         transform: translate(-50%, -50%);
         letter-spacing: 1.47px;
         opacity: 0;
@@ -405,3 +405,52 @@
               background: #fff url(../../img/soc__item-2.png) center no-repeat; }
             .team .personal__item .blackface .social-networks__item:nth-child(3) {
               background: #fff url(../../img/soc__item-3.png) center no-repeat; }
+
+.portfolio {
+  padding: 85px 0 0 0;
+  background-color: #fff;
+  width: 100%; }
+  .portfolio h2.title {
+    margin-bottom: 40px; }
+  .portfolio p.text {
+    margin-right: calc(12.5% + 15px);
+    margin-left: calc(12.5% + 15px); }
+  .portfolio .taber {
+    margin: 0 auto 0 auto;
+    padding: 50px 0 65px 0;
+    color: #3e3d3d;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.24px;
+    display: flex;
+    justify-content: center; }
+    .portfolio .taber input {
+      display: none; }
+    .portfolio .taber label:not(:last-child) {
+      margin-right: 5px; }
+    .portfolio .taber label input:checked + .custom {
+      color: #fff;
+      background-color: #3e3d3d; }
+    .portfolio .taber .custom {
+      transition: .3s;
+      cursor: pointer;
+      border: 2px solid #3e3d3d;
+      padding: 10px 20px;
+      text-transform: uppercase; }
+
+.tiles {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0px;
+  min-height: 580px;
+  letter-spacing: 0; }
+  .tiles .column {
+    position: relative; }
+  .tiles img {
+    display: block; }
+    .tiles img:last-child {
+      bottom: 0;
+      position: absolute; }
