@@ -86,6 +86,12 @@
 .grid-section
 {
     display: grid;
+    h2.title{
+        grid-column: 1 / span 12;
+    }
+    .text{
+        grid-column: 2 / 12;
+    }
 
     grid-template-columns: repeat(12, 1fr);
     -webkit-column-gap: 30px;
@@ -669,7 +675,7 @@
 .tiles{
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     font-size: 0px;
     min-height: 580px;
     letter-spacing: 0;
@@ -681,6 +687,111 @@
         &:last-child{
             bottom: 0;
             position: absolute;
+        }
+    }
+}
+.prices{
+    padding-bottom: 30px;
+    h2.title{
+        margin: 70px 0 40px 0;
+        justify-self: center;
+    }
+    @media screen and(max-width: 900px){
+        display: block;
+    }
+    p.text{
+        margin-bottom: 80px;
+    }
+    .card{
+        @media screen and(max-width: 900px){
+            margin-top: 20px;
+        }
+        text-align: center;
+        background-color: #fff;
+        padding: 45px 70px 60px 70px;
+        $i: 1;
+        $j: 1;
+        @while $i < 12 {
+            &:nth-of-type(#{$j}){
+                grid-column: #{$i} / span 4;
+            }
+            $i: $i + 4;
+            $j: $j + 1;
+        }
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        h3.mode{
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1.47px;
+            margin-bottom: 25px;
+        }
+        .icon{
+            width: 51px;
+            height: 50px;
+            background-color: #fff;
+            position: relative;
+            border-radius: 50%;
+            z-index: 2;
+            border: 2px solid #3e3d3d;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100px;
+                top: 50%;
+                left: 0;
+                transform: translate(-100%, -50%);
+                height: 2px;
+                background-color: #504f4f;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100px;
+                top: 50%;
+                right: 0;
+                transform: translate(100%, -50%);
+                height: 2px;
+                background-color: #504f4f;
+            }
+        }
+        @for $i from 1 through 3{
+                    &:nth-of-type(#{$i}) .icon{
+                background: url(../../img/modes__icon-#{$i}.svg) 
+                no-repeat center;
+            }
+        }
+        .price{
+            color: #3e3d3d;
+            font-family: Montserrat;
+            font-size: 70px;
+            font-weight: bolder;
+            line-height: 126.84px;
+            sup{
+                font-size: 28px;
+                top: -1.5em;
+            }
+        }
+        .benefits{
+            font-family: "Crimson Text";
+            font-size: 16px;
+            font-style: italic;
+            line-height: 30px;
+        }
+        .btn{
+            background-color: transparent;
+            border: none;
+            padding: 10px 35px;
+            border: 2px solid #3e3d3d;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 50px;
+            letter-spacing: 1.47px;
         }
     }
 }

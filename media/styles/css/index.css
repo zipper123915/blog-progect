@@ -61,6 +61,10 @@
   grid-template-columns: repeat(12, 1fr);
   -webkit-column-gap: 30px;
   column-gap: 30px; }
+  .grid-section h2.title {
+    grid-column: 1 / span 12; }
+  .grid-section .text {
+    grid-column: 2 / 12; }
 
 .main {
   padding-top: 73px;
@@ -443,7 +447,7 @@
 .tiles {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   font-size: 0px;
   min-height: 580px;
   letter-spacing: 0; }
@@ -454,3 +458,94 @@
     .tiles img:last-child {
       bottom: 0;
       position: absolute; }
+
+.prices {
+  padding-bottom: 30px; }
+  .prices h2.title {
+    margin: 70px 0 40px 0;
+    justify-self: center; }
+  @media screen and (max-width: 900px) {
+    .prices {
+      display: block; } }
+  .prices p.text {
+    margin-bottom: 80px; }
+  .prices .card {
+    text-align: center;
+    background-color: #fff;
+    padding: 45px 70px 60px 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    @media screen and (max-width: 900px) {
+      .prices .card {
+        margin-top: 20px; } }
+    .prices .card:nth-of-type(1) {
+      grid-column: 1 / span 4; }
+    .prices .card:nth-of-type(2) {
+      grid-column: 5 / span 4; }
+    .prices .card:nth-of-type(3) {
+      grid-column: 9 / span 4; }
+    .prices .card h3.mode {
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.47px;
+      margin-bottom: 25px; }
+    .prices .card .icon {
+      width: 51px;
+      height: 50px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 50%;
+      z-index: 2;
+      border: 2px solid #3e3d3d; }
+      .prices .card .icon::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+        height: 2px;
+        background-color: #504f4f; }
+      .prices .card .icon::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        height: 2px;
+        background-color: #504f4f; }
+    .prices .card:nth-of-type(1) .icon {
+      background: url(../../img/modes__icon-1.svg) no-repeat center; }
+    .prices .card:nth-of-type(2) .icon {
+      background: url(../../img/modes__icon-2.svg) no-repeat center; }
+    .prices .card:nth-of-type(3) .icon {
+      background: url(../../img/modes__icon-3.svg) no-repeat center; }
+    .prices .card .price {
+      color: #3e3d3d;
+      font-family: Montserrat;
+      font-size: 70px;
+      font-weight: bolder;
+      line-height: 126.84px; }
+      .prices .card .price sup {
+        font-size: 28px;
+        top: -1.5em; }
+    .prices .card .benefits {
+      font-family: "Crimson Text";
+      font-size: 16px;
+      font-style: italic;
+      line-height: 30px; }
+    .prices .card .btn {
+      background-color: transparent;
+      border: none;
+      padding: 10px 35px;
+      border: 2px solid #3e3d3d;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 50px;
+      letter-spacing: 1.47px; }
