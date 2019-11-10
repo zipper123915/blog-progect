@@ -859,7 +859,7 @@
 .short{
     background-color: #2d2d2f;
     display: -webkit-box;
-    flex-wrap: wrap;
+    align-content: space-between;
     display: flex;
     -webkit-box-align: center;
             align-items: center;
@@ -902,5 +902,95 @@
         font-weight: 400;
         cursor: pointer;
         letter-spacing: 1.47px;
+    }
+}
+.blog{
+    padding: 0;
+    h2.title{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    p.text{
+        margin-bottom: 80px;
+    }
+    .gallerey{
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(4, minmax(300px, 1fr));
+        @media screen and(max-width: 900px){
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        }
+        &__item {
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            img{
+                object-fit: cover;
+            }
+            .back-face{
+                transition: top .4s .12s;
+                padding: 50px 0 80px 10px;
+                position: absolute;
+                background-color: #555557;
+                top: -100%;
+                height: 100%;
+                hr{
+                    margin: 10px 0 20px 0;
+                    width: 40%;
+                    height: 2px;
+                    border: none;
+                    background-color: #454545;
+                }
+                .date{
+                    color: #e3e3e3;
+                    font-family: "Crimson Text";
+                    font-size: 12px;
+                    font-style: italic;
+                    line-height: 18px;
+                }
+                h3.title{
+                    font-family: Montserrat;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #fff;
+                    text-indent: 12px;
+                    line-height: 18px;
+                    position: relative;
+                    text-transform: uppercase;
+                    letter-spacing: 1.47px;
+                    &::before{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        left: 0;
+                        transform: translate(0, 50%);
+                        position: absolute;
+                        border-right: 4px solid transparent;
+                        border-left: 4px solid #fff;
+                        border-top: 3.5px solid transparent;
+                        border-bottom: 3.5px solid transparent;
+                    }
+                }
+                p.text{
+                    color: #949494;
+                    margin-top: 40px;
+                    font-family: "Crimson Text";
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: left;
+                    line-height: 20.31px;
+                    letter-spacing: 1.4px;
+                }
+            }
+            .dark{
+                background-color: #2d2d2f;
+                h3.title{
+                    color: #fff;
+                }
+            }
+            &:hover .back-face{
+                top: 0;
+            }
+        }
     }
 }
