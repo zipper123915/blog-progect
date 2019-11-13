@@ -13,7 +13,7 @@
     font-size: 20px;
     font-weight: 400;
     width: 20%;
-    min-width: 150px;
+    white-space: nowrap;
     margin: 0 auto;
     padding: 0 0 27px 0;
     text-align: center;
@@ -354,10 +354,10 @@
             background-color: #464646; }
           .history .time-line .page__item:nth-child(even) .verticaline {
             position: absolute;
-            top: -38%;
-            left: -5.7%;
-            width: 2px;
-            height: 150%;
+            top: -41%;
+            left: -4.7%;
+            width: 3px;
+            height: 155%;
             background-color: #3e3d3d; }
       .history .time-line .page .dark {
         color: #e4e4e4;
@@ -503,7 +503,7 @@
   grid-auto-flow: row;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   font-size: 0px;
-  min-height: 580px;
+  min-height: 680px;
   letter-spacing: 0; }
   .tiles .column {
     position: relative; }
@@ -537,7 +537,9 @@
     flex-flow: column nowrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    transition: all .4s;
+    cursor: pointer; }
     @media screen and (max-width: 900px) {
       .prices .card {
         margin-top: 20px; } }
@@ -547,6 +549,9 @@
       grid-column: 5 / span 4; }
     .prices .card:nth-of-type(3) {
       grid-column: 9 / span 4; }
+    .prices .card:hover {
+      transform: translate(0, -10%) scale(1.05);
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.4); }
     .prices .card h3.mode {
       font-family: Montserrat;
       font-size: 13px;
@@ -678,7 +683,10 @@
     margin-top: 80px;
     margin-bottom: 40px; }
   .blog p.text {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto; }
   .blog .gallerey {
     display: grid;
     grid-auto-rows: 1fr;
@@ -778,12 +786,13 @@
   margin-top: 120px;
   min-height: 550px; }
   .clients .slider__item {
-    position: relative;
+    position: absolute;
     padding-bottom: 120px;
     flex-flow: column nowrap;
     align-items: center;
     position: absolute;
     display: flex;
+    width: 100%;
     top: 0; }
     .clients .slider__item .autor-img {
       margin: 80px 0 55px 0; }
