@@ -18,6 +18,7 @@
         font-weight: 400;
 
         width: 20%;
+        min-width: 150px;
         margin: 0 auto;
         padding: 0 0 27px 0;
 
@@ -26,6 +27,10 @@
         text-transform: uppercase;
 
         background: url(../../img/title-under-line.png) repeat-x left bottom;
+    }
+    h2.wight-line.title
+    {
+        background-image: url(../../img/wight-line.png);
     }
     p.text
     {
@@ -301,20 +306,14 @@
             letter-spacing: 1.47px;
             text-transform: uppercase;
         }
-        @media screen and(max-width: 900px)
-        {
-            $j: 1;
-            -ms-grid-column-span: 6;
+        @media screen and(max-width: 900px) {
             grid-column-end: span 6;
-            @while $j < 12
-            {
-                $j: $j + 6;
-                &:nth-child(#{$j})
-                {
-                    -ms-grid-column: #{$j};
-                        grid-column-start: #{$j};
-                }
-            }
+            grid-row-start: auto;
+            margin-top: 30px;
+        }
+        @media screen and(max-width: 480px) {
+            grid-column-end: span 12;
+            margin-top: 30px;
         }
     }
 }
@@ -763,7 +762,7 @@
 .prices{
     padding-bottom: 30px;
     h2.title{
-        margin: 70px 0 40px 0;
+        margin: 70px auto 40px auto;
         -ms-grid-column-align: center;
             justify-self: center;
     }
@@ -889,10 +888,17 @@
     font-size: 16px;
     padding-bottom: 50px;
     padding-top: 50px;
+    @media screen and(max-width: 480px) {
+        display: inline-flex;
+        flex-flow: column nowrap;
+        padding-right: 0;
+        padding-left: 0;
+    }
     .icon{
-        background: url(../../img/short__icon.png) center no-repeat;
+        background: url(../../img/short__icon.png) center / contain no-repeat;
         width: 109px;
         margin-right: 40px;
+        align-self: center;
         height: 104px;
     }
     .desc{
@@ -926,6 +932,9 @@
         font-weight: 400;
         cursor: pointer;
         letter-spacing: 1.47px;
+        @media screen and(max-width: 480px) {
+            margin-top: 30px;
+        }
     }
 }
 .blog{
@@ -943,6 +952,9 @@
         grid-template-columns: repeat(4, minmax(300px, 1fr));
         @media screen and(max-width: 900px){
             grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        }
+        @media screen and(max-width: 680px) {
+            grid-template-columns: minmax(300px, 1fr);
         }
         &__item {
             position: relative;
@@ -1024,12 +1036,14 @@
 .clients{
     h2.title{
         margin-bottom: 40px;
+        margin-top: 80px;
     }
     .about-clients {
         margin-top: 80px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        flex-wrap: wrap;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
@@ -1126,15 +1140,15 @@
         object-fit: cover;
     }
     .location{
-        width: 63px;
-        height: 63px;
+        width: 4vmax;
+        height: 4vmax;
         position: absolute;
         outline: 4px solid #2d2d2f;
         border: 2px solid #a1a1a1;
         background-color: #2d2d2f;
         background: #2d2d2f  url(../../img/Logo.png) center no-repeat;
-        top: 200px;
-        left: 500px;
+        top: 40%;
+        left: 70%;
         &::after{
             content: '';
             width: 0;

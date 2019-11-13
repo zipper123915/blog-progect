@@ -17,9 +17,13 @@
     width: 75%;
     display: -webkit-box;
     display: flex;
+    position: relative;
     -webkit-box-pack: justify;
     justify-content: space-between;
     padding: 0 15px; }
+    @media screen and (max-width: 480px) {
+      .header > .title {
+        width: 100%; } }
     .header > .title .logo {
       padding: 0 0 0 50px;
       background: url(../../img/Icon_Logo.png) no-repeat center left; }
@@ -38,19 +42,53 @@
         text-transform: uppercase; }
         .header > .title .nav__item:not(:last-child) {
           margin-right: 15px; }
+      @media screen and (max-width: 900px) {
+        .header > .title .nav {
+          display: none; } }
+    .header > .title .open-nav {
+      background-color: transparent;
+      border: none;
+      opacity: .6;
+      height: 100%;
+      align-self: center;
+      width: 30px; }
+      @media screen and (min-width: 900px) {
+        .header > .title .open-nav {
+          display: none; } }
     .header > .title .socialnetworks {
       display: -webkit-box;
       display: flex;
       -webkit-box-align: center;
       align-items: center; }
       .header > .title .socialnetworks__item:nth-child(1)::before {
-        content: url(....imgfacebook-title.png);
+        content: url(../../img/facebook-title.png);
         margin-right: 10px; }
       .header > .title .socialnetworks__item:nth-child(2)::before {
         content: url(../../img/Tweter-title.png);
         margin-right: 10px; }
       .header > .title .socialnetworks__item:nth-child(3)::before {
         content: url(../../img/Behance-title.png); }
+      @media screen and (max-width: 900px) {
+        .header > .title .socialnetworks {
+          margin-left: auto;
+          margin-right: 20px; } }
+  .header .mobile-nav {
+    display: flex;
+    width: 100%;
+    max-height: 0;
+    transition: .5s;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 auto; }
+    .header .mobile-nav__item {
+      text-decoration: none;
+      color: #aaa;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 50px;
+      text-transform: uppercase; }
   .header .wellcome {
     display: -webkit-box;
     display: flex;
@@ -72,8 +110,20 @@
       left: calc(12.5% + 15px);
       -webkit-transform: translate(0, -50%) rotate(-180deg);
       transform: translate(0, -50%) rotate(-180deg); }
+      @media screen and (min-width: 480px) and (max-width: 900px) {
+        .header .wellcome .control-1 {
+          left: 10px; } }
+      @media screen and (max-width: 480px) {
+        .header .wellcome .control-1 {
+          bottom: 10px; } }
     .header .wellcome .control-2 {
       right: calc(12.5% + 15px); }
+      @media screen and (min-width: 480px) and (max-width: 900px) {
+        .header .wellcome .control-2 {
+          right: 10px; } }
+      @media screen and (max-width: 480px) {
+        .header .wellcome .control-2 {
+          bottom: 10px; } }
     .header .wellcome .included {
       margin: auto;
       text-align: center; }
@@ -133,7 +183,7 @@
         .header .wellcome .included .btn:hover {
           box-shadow: 0 0 5px 0 #fff, inset 0 0 0 5px #fff; }
         .header .wellcome .included .btn::after {
-          content: url(../../img/Arrow-down-for-btn.svg);
+          content: url(../../img/Arrow-down-for-btn.png);
           left: 50%;
           -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -153,6 +203,9 @@
   align-items: center;
   padding: 0 calc(12.5% + 15px);
   background: #292929; }
+  @media screen and (max-width: 900px) {
+    .footer {
+      display: block; } }
   .footer input {
     background-color: transparent;
     padding: 22px;
@@ -161,9 +214,14 @@
     font-size: 14px;
     font-style: italic;
     line-height: 20.31px;
+    display: block;
     letter-spacing: 1.4px;
     border: none;
     border: 2px solid #464646; }
+    @media screen and (max-width: 900px) {
+      .footer input {
+        width: 100%;
+        margin: 20px 0; } }
     .footer input#name {
       -ms-grid-column: 5;
       -ms-grid-column-span: 4;
@@ -205,6 +263,11 @@
     grid-column: 5 / span 8;
     -ms-grid-row: 4;
     grid-row: 4; }
+    @media screen and (max-width: 900px) {
+      .footer textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px; } }
   .footer button {
     -ms-grid-column: 5;
     grid-column-start: 5;
