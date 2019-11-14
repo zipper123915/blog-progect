@@ -143,6 +143,10 @@
           position: absolute;
           top: 0px;
           height: 6px;
+          margin: 0 auto;
+          left: 50%;
+          transform: translate(-50%, 0);
+          max-width: 300px;
           width: 100%;
           display: block;
           background: url(../../img/Line.png) repeat-x; }
@@ -150,10 +154,16 @@
           content: '';
           bottom: 0px;
           height: 6px;
+          margin: 0 auto;
+          left: 50%;
+          transform: translate(-50%, 0);
+          max-width: 300px;
           width: 100%;
           position: absolute;
           display: block;
           background: url(../../img/Line.png) repeat-x; }
+      .header .wellcome .included .only-bottom-line::before {
+        display: none; }
       .header .wellcome .included .sub-title {
         color: #ffffff;
         font-family: "Crimson Text";

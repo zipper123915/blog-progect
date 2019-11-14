@@ -1,0 +1,71 @@
+@import url(normalize.css);
+@import url(header_footer.css);
+.header .wellcome {
+  background-image: url(../../img/blog__wellcome-bg.jpg); }
+
+.main {
+  width: 75%;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px; }
+  .main .aside {
+    grid-column: 10 / span 3; }
+    .main .aside .search {
+      width: 100%;
+      position: relative; }
+      .main .aside .search input {
+        color: #3e3d3d;
+        width: 100%;
+        padding: 10px 15px;
+        border: 2px solid #a8a8a8;
+        font-family: "Crimson Text";
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px; }
+      .main .aside .search::after {
+        content: url(../../img/search.png);
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        right: 20px;
+        transform: translate(0, -40%);
+        cursor: pointer; }
+    .main .aside .lastest-post {
+      padding: 40px 0 0 0; }
+      .main .aside .lastest-post h2.title {
+        color: #3e3d3d;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 18px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1.81px; }
+      .main .aside .lastest-post__item {
+        display: flex;
+        max-height: 120px;
+        color: #3e3d3d;
+        flex-flow: column wrap; }
+        .main .aside .lastest-post__item .img img {
+          width: 100%;
+          object-fit: fill; }
+        .main .aside .lastest-post__item h3.title {
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1.2px; }
+        .main .aside .lastest-post__item p.text {
+          font-family: "Crimson Text";
+          font-size: 14px;
+          font-style: italic;
+          line-height: 25px;
+          letter-spacing: 1.4px; }
+        .main .aside .lastest-post__item .new-string {
+          width: 100%; }
+  .main .post {
+    grid-column: 1 / span 9; }
