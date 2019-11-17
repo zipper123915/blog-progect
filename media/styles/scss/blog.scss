@@ -21,12 +21,16 @@
   column-gap: 30px;
   @media screen and(max-width: 800px) {
     display: block;
+    width: 100%;
   }
   .post {
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
     grid-column: 1 / span 9;
     margin-right: 50px;
+    @media (max-width: 900px) {
+      margin-right: 0;
+    }
     article {
       margin: 50px 0;
       color: #3e3d3d;

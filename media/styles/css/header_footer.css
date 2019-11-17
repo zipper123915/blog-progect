@@ -138,6 +138,9 @@
         white-space: nowrap;
         text-transform: uppercase;
         letter-spacing: 0.89px; }
+        @media screen and (max-width: 900px) {
+          .header .wellcome .included .title {
+            white-space: normal; } }
         .header .wellcome .included .title::before {
           content: '';
           position: absolute;
@@ -216,6 +219,10 @@
   @media screen and (max-width: 900px) {
     .footer {
       display: block; } }
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding-right: 0;
+      padding-left: 0; } }
   .footer input {
     background-color: transparent;
     padding: 22px;

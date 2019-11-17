@@ -24,6 +24,7 @@
       content: url(../../img/search.png);
       position: absolute;
       top: 50%;
+      display: none;
       width: 20px;
       height: 20px;
       right: 20px;
@@ -128,12 +129,16 @@
   column-gap: 30px; }
   @media screen and (max-width: 800px) {
     .main {
-      display: block; } }
+      display: block;
+      width: 100%; } }
   .main .post {
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
     grid-column: 1 / span 9;
     margin-right: 50px; }
+    @media (max-width: 900px) {
+      .main .post {
+        margin-right: 0; } }
     .main .post article {
       margin: 50px 0;
       color: #3e3d3d; }
