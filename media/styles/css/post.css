@@ -1,0 +1,137 @@
+@import url(normalize.css);
+@import url(aside.css);
+@import url(header_footer.css);
+@import url(blog.css);
+.post {
+  margin-bottom: 150px; }
+  .post blockquote {
+    color: #3e3d3d;
+    font-family: "Crimson Text";
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    padding: 60px 45px;
+    margin: 40px 0 60px 0;
+    line-height: 25px;
+    letter-spacing: 1.6px;
+    border: 2px solid #a8a8a8; }
+  .post .share {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #b7b7b7;
+    border-top: 1px solid #b7b7b7; }
+    .post .share__item {
+      width: 31px;
+      height: 31px;
+      border: 1px solid #e3e3e3;
+      border-radius: 50%;
+      margin: 0 2.5px;
+      cursor: pointer;
+      line-height: 31px; }
+      .post .share__item img {
+        opacity: .5; }
+  .post .comment-block {
+    padding: 65px 0 0 0; }
+    .post .comment-block h2.title {
+      margin: 0 0 50px 0;
+      color: #3e3d3d;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.81px; }
+    .post .comment-block .comment {
+      display: flex;
+      color: #3e3d3d;
+      margin-bottom: 30px; }
+      .post .comment-block .comment .level {
+        margin: 0 0 0 20px;
+        position: relative;
+        padding: 0 0 70px 0;
+        border-bottom: 1px solid #b7b7b7; }
+        .post .comment-block .comment .level::after {
+          content: 'Reply';
+          font-family: "Crimson Text";
+          font-size: 14px;
+          font-style: italic;
+          line-height: 18px;
+          position: absolute;
+          bottom: 10px;
+          right: 0;
+          padding-left: 20px;
+          background: url(../../img/comment-icon.png) left center no-repeat; }
+        .post .comment-block .comment .level:not(:last-child) {
+          margin-bottom: 35px; }
+      .post .comment-block .comment .name {
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.47px; }
+      .post .comment-block .comment .date {
+        font-family: "Crimson Text";
+        font-size: 14px;
+        font-style: italic;
+        line-height: 18px; }
+      .post .comment-block .comment p.text {
+        font-family: "Crimson Text - Roman";
+        font-size: 14px;
+        margin-top: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 1.4px; }
+  .post .leave-comment {
+    color: #3e3d3d; }
+    .post .leave-comment h2.title {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.81px; }
+    .post .leave-comment form {
+      display: grid;
+      margin-top: 45px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 20px; }
+      @media screen and (max-width: 900px) {
+        .post .leave-comment form {
+          display: block; } }
+      .post .leave-comment form input,
+      .post .leave-comment form textarea {
+        border: 2px solid #464646;
+        color: #464646;
+        font-family: "Crimson Text";
+        font-size: 14px;
+        padding: 10px 25px;
+        font-style: italic;
+        line-height: 20.31px;
+        letter-spacing: 1.4px; }
+        .post .leave-comment form input:focus,
+        .post .leave-comment form textarea:focus {
+          outline: none; }
+        @media (max-width: 900px) {
+          .post .leave-comment form input,
+          .post .leave-comment form textarea {
+            width: 100%;
+            margin-bottom: 20px; } }
+      .post .leave-comment form textarea {
+        resize: none;
+        grid-column-end: span 2;
+        padding: 20px 0 0 25px; }
+      .post .leave-comment form .btn {
+        background-color: #464646;
+        color: #e3e3e3;
+        align-self: start;
+        justify-self: start;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        height: 40px;
+        padding: 0 40px;
+        border: none;
+        letter-spacing: 1.47px; }

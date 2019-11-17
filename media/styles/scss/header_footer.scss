@@ -155,6 +155,9 @@
 				white-space: nowrap;
 				text-transform: uppercase;
 				letter-spacing: 0.89px;
+				@media screen and(max-width: 900px) {
+					white-space: normal;
+				}
 				&::before{
 					content: '';
 					position: absolute;
@@ -243,6 +246,10 @@
 	background:#292929;
 	@media screen and(max-width: 900px) {
 		display: block;
+	}
+	@media screen and(max-width: 480px) {
+		padding-right: 0;
+		padding-left: 0;
 	}
 	input{
 		background-color: transparent;
